@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "availability_statuses",
+  "info": {
+    "singularName": "availability-status",
+    "pluralName": "availability-statuses",
+    "displayName": "Availability Status",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "center": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::center.center",
+      "inversedBy": "availability_statuses"
+    },
+    "vaccine": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vaccine.vaccine",
+      "inversedBy": "availability_statuses"
+    }
+  }
+}

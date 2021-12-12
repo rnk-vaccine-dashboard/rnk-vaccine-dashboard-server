@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaccines",
+  "info": {
+    "singularName": "vaccine",
+    "pluralName": "vaccines",
+    "displayName": "Vaccine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "vaccineId": {
+      "type": "integer",
+      "required": true
+    },
+    "availability_statuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::availability-status.availability-status",
+      "mappedBy": "vaccine"
+    }
+  }
+}

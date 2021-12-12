@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centers",
+  "info": {
+    "singularName": "center",
+    "pluralName": "centers",
+    "displayName": "Center",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "centerId": {
+      "type": "integer",
+      "required": true
+    },
+    "availability_statuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::availability-status.availability-status",
+      "mappedBy": "center"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
