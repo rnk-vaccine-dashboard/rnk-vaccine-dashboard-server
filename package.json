@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-graphql": "4.0.0",
     "@strapi/plugin-i18n": "4.0.0",
@@ -29,5 +28,6 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.1.1"
 }
