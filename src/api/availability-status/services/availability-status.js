@@ -42,8 +42,6 @@ module.exports = createCoreService('api::availability-status.availability-status
 				// add center to params.data
 				params.data.center = center.id;
 			}
-
-			console.log('center', center);
 		}
 
 		// match vaccineId foreign key to local vaccineId
@@ -58,8 +56,6 @@ module.exports = createCoreService('api::availability-status.availability-status
 				// add center to params.data
 				params.data.vaccine = vaccine.id;
 			}
-
-			console.log('vaccine', vaccine);
 		}
 
 		const result = await super.create(params);
