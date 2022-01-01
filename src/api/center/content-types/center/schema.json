@@ -28,6 +28,13 @@
     },
     "address": {
       "type": "string"
+    },
+    "targetGroups": {
+      "type": "enumeration",
+      "enum": [
+        "adults",
+        "children"
+      ]
     }
   }
 }
