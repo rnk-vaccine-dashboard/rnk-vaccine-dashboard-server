@@ -35,6 +35,12 @@
         "adults",
         "children"
       ]
+    },
+    "lat": {
+      "type": "float"
+    },
+    "long": {
+      "type": "float"
     }
   }
 }
